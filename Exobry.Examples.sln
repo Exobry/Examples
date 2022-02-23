@@ -11,15 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C0292E7A-8978-4278-9056-34AF5B766270}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{EAF60494-D935-445D-ABEB-ADF7CA3E24EF}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{948EE8A2-802D-4EA3-9667-C7EC5884415B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exobry.Examples.AA_BlazorState_MediatR.Pages", "src\Exobry.Examples.AA_BlazorState_MediatR.Pages\Exobry.Examples.AA_BlazorState_MediatR.Pages.csproj", "{0385D5D8-D90E-4203-B54E-F33364D9DB25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exobry.Examples.AA_BlazorState_MediatR.Pages", "src\Exobry.Examples.AA_BlazorState_MediatR.Pages\Exobry.Examples.AA_BlazorState_MediatR.Pages.csproj", "{0385D5D8-D90E-4203-B54E-F33364D9DB25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exobry.Examples.AA_BlazorState_MediatR.Client", "src\Exobry.Examples.AA_BlazorState_MediatR.Client\Exobry.Examples.AA_BlazorState_MediatR.Client.csproj", "{48B04C13-AEC7-4F72-BAE5-FCBC4FF6F0D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exobry.Examples.AA_BlazorState_MediatR.Client", "src\Exobry.Examples.AA_BlazorState_MediatR.Client\Exobry.Examples.AA_BlazorState_MediatR.Client.csproj", "{48B04C13-AEC7-4F72-BAE5-FCBC4FF6F0D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exobry.Examples.AA_BlazorState_MediatR.Components", "src\Exobry.Examples.AA_BlazorState_MediatR.Components\Exobry.Examples.AA_BlazorState_MediatR.Components.csproj", "{16F1B9C7-B695-4BCA-895D-259A360B1067}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exobry.Examples.AA_BlazorState_MediatR.Components", "src\Exobry.Examples.AA_BlazorState_MediatR.Components\Exobry.Examples.AA_BlazorState_MediatR.Components.csproj", "{16F1B9C7-B695-4BCA-895D-259A360B1067}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,7 +42,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{EAF60494-D935-445D-ABEB-ADF7CA3E24EF} = {C0292E7A-8978-4278-9056-34AF5B766270}
 		{948EE8A2-802D-4EA3-9667-C7EC5884415B} = {C0292E7A-8978-4278-9056-34AF5B766270}
 		{0385D5D8-D90E-4203-B54E-F33364D9DB25} = {948EE8A2-802D-4EA3-9667-C7EC5884415B}
 		{48B04C13-AEC7-4F72-BAE5-FCBC4FF6F0D5} = {948EE8A2-802D-4EA3-9667-C7EC5884415B}
