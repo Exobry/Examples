@@ -1,0 +1,15 @@
+﻿@inherits BlazorStateComponent
+
+<p role="status">Current count: @CounterState?.Value</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    public CounterState CounterState => GetState<CounterState>();
+
+    public async Task IncrementCount()
+    {
+        await Mediator.Send(new CounterState.IncrementValueAction(1));
+    }
+
+}

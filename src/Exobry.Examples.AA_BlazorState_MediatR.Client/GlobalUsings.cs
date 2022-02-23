@@ -1,0 +1,1 @@
+﻿global using Exobry.Examples.AA_BlazorState_MediatR.Pages;

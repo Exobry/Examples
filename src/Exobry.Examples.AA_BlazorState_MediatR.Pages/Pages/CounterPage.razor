@@ -1,0 +1,16 @@
+﻿@page "/"
+@using Exobry.Examples.AA_BlazorState_MediatR.Components.Components.Counter
+@inherits BlazorStateComponent
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<CounterComponent></CounterComponent>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        // Easy access State without imports : 
+        await Mediator.Send(new CounterState.IncrementValueAction(2));
+    }
+}

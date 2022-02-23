@@ -1,3 +1,3 @@
-# Example/##_...
+# Example/AA_BlazorState_MediatR
 
-Create new branch from here and work out the example project, never push to development or main.
+Blazor .net6, BlazorState & MediatR using CQRS
