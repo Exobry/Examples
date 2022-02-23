@@ -1,0 +1,66 @@
+﻿@using Exobry.Examples.AB_FluentMail.Client.Components.Contact
+@inherits BlazorStateComponent
+@if (!ContactState.IsFormProcessing)
+{
+    @if (!ContactState.DisplayProcessedResult)
+    {
+        <EditForm Model="ContactState"  
+            OnValidSubmit="() => MediatorSend(new ContactComponentState.SubmitAction())">
+            <FluentValidationValidator />
+            <ValidationSummary />
+
+            <div class="form-group">
+                <label for="Email">Email* </label>
+                <input class="form-control" type="email" id="Email" @bind-value="ContactState.Email" placeholder="jhon@doe.com">
+            </div>
+    
+            <div class="form-group">
+                <label for="Message">Bericht* </label>
+                <textarea id="Message" rows="10" 
+                    value="@ContactState.Message" @onchange="(args) => ContactState.Message = args?.Value?.ToString() ?? string.Empty" 
+                    class="form-control">
+                </textarea>
+            </div>
+
+            <button class="mt-3 btn btn-primary" type="submit">Submit</button>
+        </EditForm>
+    }else if (ContactState.IsFormSuccessfullyProcessed)
+    {
+        <div class="d-flex flex-column justify-content-center align-items-center pb-4">
+            <p class="text-center">Message send succesfully!</p>
+            <button class="btn btn-primary w-25" 
+                @onclick="() => MediatorSend(new ContactComponentState.ResetAction())">
+                Create new message
+            </button>
+        </div>
+    }
+    else
+    {
+        <div class="d-flex flex-column justify-content-center align-items-center pb-4">
+            <p class="text-center">Something went wrong!</p>
+            <button class="btn btn-primary w-25" 
+                @onclick="() => MediatorSend(new ContactComponentState.ResetAction())">
+                Try again
+            </button>
+        </div>
+    }
+
+}
+else
+{
+    <div class="d-flex flex-column justify-content-center align-items-center pb-4">
+        <div class="spinner-border text-success" role="status">
+          <span class="sr-only"></span>
+        </div>
+    </div>
+}
+
+
+@code {
+    public ContactComponentState ContactState => GetState<ContactComponentState>();
+
+    public async void MediatorSend(object action)
+    {
+        await Mediator.Send(action);
+    }
+}

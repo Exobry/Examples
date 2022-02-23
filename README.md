@@ -1,3 +1,6 @@
-# Example/##_...
+# Example/AB_FluentEmail
 
-Create new branch from here and work out the example project, never push to development or main.
+* .NET6 Blazor - .NET Hosted
+* FluentEmail
+* Email Templates
+* BlazorState + MediatR

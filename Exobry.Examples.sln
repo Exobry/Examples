@@ -9,9 +9,60 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{98C7AA70-44EA-48A9-9C28-B34BAA134C98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exobry.Examples.AB_FluentEmail.Server", "src\Exobry.Examples.AB_FluentEmail\Server\Exobry.Examples.AB_FluentEmail.Server.csproj", "{EA485B0F-0667-4037-A91B-2424FFD30907}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exobry.Examples.AB_FluentEmail.Client", "src\Exobry.Examples.AB_FluentEmail\Client\Exobry.Examples.AB_FluentEmail.Client.csproj", "{1CD05818-DA20-49B5-B949-AFC4086492CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exobry.Examples.AB_FluentEmail.Shared", "src\Exobry.Examples.AB_FluentEmail\Shared\Exobry.Examples.AB_FluentEmail.Shared.csproj", "{D0FDFFAF-DC95-4A1E-A037-87B389DD3224}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{72105E69-CD60-4DCB-90F9-33540DCEFC15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{A49E62BB-CD24-4B53-8062-4A1A19296733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exobry.Examples.AB_FluentEmail.Pages", "src\Exobry.Examples.AB_FluentEmail.Pages\Exobry.Examples.AB_FluentEmail.Pages.csproj", "{8A5E46C3-6EB6-42FA-B3CE-58C2F8D523D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exobry.Examples.AB_FluentEmail.Components", "src\Exobry.Examples.AB_FluentEmail.Components\Exobry.Examples.AB_FluentEmail.Components.csproj", "{3AC57289-68F1-47A6-903A-103040C92D26}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA485B0F-0667-4037-A91B-2424FFD30907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA485B0F-0667-4037-A91B-2424FFD30907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA485B0F-0667-4037-A91B-2424FFD30907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA485B0F-0667-4037-A91B-2424FFD30907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CD05818-DA20-49B5-B949-AFC4086492CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD05818-DA20-49B5-B949-AFC4086492CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD05818-DA20-49B5-B949-AFC4086492CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD05818-DA20-49B5-B949-AFC4086492CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0FDFFAF-DC95-4A1E-A037-87B389DD3224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0FDFFAF-DC95-4A1E-A037-87B389DD3224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0FDFFAF-DC95-4A1E-A037-87B389DD3224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0FDFFAF-DC95-4A1E-A037-87B389DD3224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A5E46C3-6EB6-42FA-B3CE-58C2F8D523D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A5E46C3-6EB6-42FA-B3CE-58C2F8D523D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A5E46C3-6EB6-42FA-B3CE-58C2F8D523D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A5E46C3-6EB6-42FA-B3CE-58C2F8D523D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AC57289-68F1-47A6-903A-103040C92D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AC57289-68F1-47A6-903A-103040C92D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AC57289-68F1-47A6-903A-103040C92D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AC57289-68F1-47A6-903A-103040C92D26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA485B0F-0667-4037-A91B-2424FFD30907} = {72105E69-CD60-4DCB-90F9-33540DCEFC15}
+		{1CD05818-DA20-49B5-B949-AFC4086492CC} = {72105E69-CD60-4DCB-90F9-33540DCEFC15}
+		{D0FDFFAF-DC95-4A1E-A037-87B389DD3224} = {72105E69-CD60-4DCB-90F9-33540DCEFC15}
+		{72105E69-CD60-4DCB-90F9-33540DCEFC15} = {98C7AA70-44EA-48A9-9C28-B34BAA134C98}
+		{A49E62BB-CD24-4B53-8062-4A1A19296733} = {72105E69-CD60-4DCB-90F9-33540DCEFC15}
+		{8A5E46C3-6EB6-42FA-B3CE-58C2F8D523D9} = {A49E62BB-CD24-4B53-8062-4A1A19296733}
+		{3AC57289-68F1-47A6-903A-103040C92D26} = {A49E62BB-CD24-4B53-8062-4A1A19296733}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3A0729BC-62E3-4FBA-AC14-2D5114427FAF}
