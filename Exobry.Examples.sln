@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exobry.Examples.AA_BlazorSt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exobry.Examples.AA_BlazorState_MediatR.Components", "src\Exobry.Examples.AA_BlazorState_MediatR.Components\Exobry.Examples.AA_BlazorState_MediatR.Components.csproj", "{16F1B9C7-B695-4BCA-895D-259A360B1067}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exobry.Examples.AC_Blazor_To_MAUI", "src\Exobry.Examples.AC_Blazor_To_MAUI\Exobry.Examples.AC_Blazor_To_MAUI.csproj", "{CAE3B310-E498-4A30-9C0D-709CD1BDBB38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,12 @@ Global
 		{16F1B9C7-B695-4BCA-895D-259A360B1067}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16F1B9C7-B695-4BCA-895D-259A360B1067}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16F1B9C7-B695-4BCA-895D-259A360B1067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAE3B310-E498-4A30-9C0D-709CD1BDBB38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAE3B310-E498-4A30-9C0D-709CD1BDBB38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAE3B310-E498-4A30-9C0D-709CD1BDBB38}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CAE3B310-E498-4A30-9C0D-709CD1BDBB38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAE3B310-E498-4A30-9C0D-709CD1BDBB38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAE3B310-E498-4A30-9C0D-709CD1BDBB38}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,8 +52,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{948EE8A2-802D-4EA3-9667-C7EC5884415B} = {C0292E7A-8978-4278-9056-34AF5B766270}
 		{0385D5D8-D90E-4203-B54E-F33364D9DB25} = {948EE8A2-802D-4EA3-9667-C7EC5884415B}
-		{48B04C13-AEC7-4F72-BAE5-FCBC4FF6F0D5} = {948EE8A2-802D-4EA3-9667-C7EC5884415B}
+		{48B04C13-AEC7-4F72-BAE5-FCBC4FF6F0D5} = {C0292E7A-8978-4278-9056-34AF5B766270}
 		{16F1B9C7-B695-4BCA-895D-259A360B1067} = {948EE8A2-802D-4EA3-9667-C7EC5884415B}
+		{CAE3B310-E498-4A30-9C0D-709CD1BDBB38} = {C0292E7A-8978-4278-9056-34AF5B766270}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3A0729BC-62E3-4FBA-AC14-2D5114427FAF}
