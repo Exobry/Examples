@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="6.0.2" />
+    <PackageReference Include="HotChocolate.AspNetCore" Version="12.6.0" />
+    <PackageReference Include="HotChocolate.Data.EntityFramework" Version="12.6.0" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Exobry.Examples.AD_GraphQL_EF.Domain\Exobry.Examples.AD_GraphQL_EF.Domain.csproj" />
+    <ProjectReference Include="..\..\Exobry.Examples.AD_GraphQL_EF.Infrastructure\Exobry.Examples.AD_GraphQL_EF.Infrastructure.csproj" />
+    <ProjectReference Include="..\Client\Exobry.Examples.AD_GraphQl_EF.Client.csproj" />
+    <ProjectReference Include="..\Shared\Exobry.Examples.AD_GraphQl_EF.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+
+</Project>
