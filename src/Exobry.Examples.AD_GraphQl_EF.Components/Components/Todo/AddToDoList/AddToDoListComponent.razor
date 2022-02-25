@@ -1,0 +1,13 @@
+@inherits BlazorStateComponent
+<div class="container">
+    <EditForm Model="@State">
+        <div class="mb-3">
+            <label for="ListName" class="form-label">ToDoList Name: </label>
+            <input type="text" id="ListName" class="form-control" @bind-value="State.Name">
+        </div>
+        <button class="btn btn-primary" type="submit">Submit test 2</button>
+    </EditForm>
+</div>
+@code {
+    private AddToDoListComponentState State => GetState<AddToDoListComponentState>();
+}
